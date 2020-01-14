@@ -63,4 +63,4 @@ function twoStrings(s1, s2) {
     }
 }
 
-console.log(twoStrings("helo", "world"))
+console.log(twoStrings("hello", "world"))
