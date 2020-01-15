@@ -64,3 +64,22 @@ function twoStrings(s1, s2) {
 }
 
 console.log(twoStrings("hello", "world"))
+
+function countingValleys(n, s) {
+    // conto quantos vales tem no total, no caso ele conta subidas e descidas juntos.
+    let aux = 0
+    let count = 0
+    for (let i = 0; i < n; i++) {
+        if (s[i] == 'D') {
+            if(aux == 0){
+                count++
+            }
+            aux--
+        } else {
+            aux++
+        }
+    }
+    return count
+}
+
+console.log(countingValleys(8, "UDDDUDUU"))
